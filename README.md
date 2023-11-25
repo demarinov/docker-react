@@ -1,4 +1,7 @@
 # Getting Started with Docker
+<p align="center">
+  <img width="70%" height="70%" src="https://www.hashroot.com/assets/img/services/devops/docker.png" />
+</p>
 
 ## :rocket: Introduction
 In this mini project we demonstrate how to use Docker to build and run a simple react application.
