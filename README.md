@@ -12,7 +12,7 @@ Docker is an open platform for developing, shipping, and running applications. D
 ## 🚢 Docker Concepts
 - Container
   - A container is a sandboxed process running on a host machine that is isolated from all other processes running on that host machine.
-  - Is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI.
+  - Is a runnable instance of an image. We can create, start, stop, move, or delete a container using the Docker API or CLI.
  
 - Image
   - A running container uses an isolated filesystem. This isolated filesystem is provided by an image, and the image must contain everything needed to run an application - all dependencies, configurations, scripts, binaries, etc.
@@ -37,7 +37,7 @@ COPY --chown=node:node ./ ./
 CMD ["npm","start"]
 ```
 - In order to build our docker image, from docker file directory we run: `docker build -t react-app .`
-  - The -t flag tags your image
+  - The -t flag tags our image
 - In order to run our application inside a docker container we run: `docker run -dp 127.0.0.1:3000:3000 react-app`
   - The -d flag (short for --detach) runs the container in the background. The -p flag (short for --publish) creates a port mapping between the host and the container.
   - After few seconds we can open the browser on http://localhost:3000
